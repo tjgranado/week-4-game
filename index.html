@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Crystal Collector Game</title>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Crystal Collector Game">
+    <meta name="author" content="Thomas Granado">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+
+</head>
+
+<body>
+	<script
+		src="https://code.jquery.com/jquery-3.3.1.js"
+		integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+		crossorigin="anonymous">
+	</script>
+
+	<div class="container">
+
+		<div class="jumbotron">
+			<h1>Collect Some Rare Stones</h1>
+			<!-- rules -->
+			<h4><small>A random number will generate the beginning of each game</small></h4>
+			<h4><small>Clicking on one of the rare stones will add points to your score</small></h4>
+			<h4><small>The number of points each stone is worth will change game to game</small></h4>
+			<h4><small>Win the game by reaching the initially generated score by clicking on the rare stones</small></h4>
+		</div>
+
+		<div class="row">
+			<div class="col-md-3 col-md-offset-1 randomNumberDiv">
+				<h2 id="randomNumber">random#</h2>
+			</div>
+			<div class="col-md-3 col-md-offset-1 winsLossesDiv">
+				<p id="winsTally">Dubs: </p>
+				<p id="lossesTally">L's: </p>
+			</div>
+		</div>
+
+		<!-- rare stones -->
+		<div class="row">
+			<div class="col-md-1 col-md-offset-1 gem" value="gem1">
+				<img src="assets/images/diamond.png" class="img-responsive" alt="Gem1">
+			</div>
+			<div class="col-md-1 col-md-offset-1 gem" value="gem2">
+				<img src="assets/images/emerald.png" class="img-responsive" alt="Gem2">
+			</div>
+			<div class="col-md-1 col-md-offset-1 gem" value="gem3">
+				<img src="assets/images/ruby.png" class="img-responsive" alt="Gem3">
+			</div>
+			<div class="col-md-1 col-md-offset-1 gem" value="gem4">
+				<img src="assets/images/sapphire.png" class="img-responsive" alt="Gem4">
+			</div>
+		</div>
+		
+		<div class="row">
+			<div class="col-md-3 col-md-offset-1 scoreDiv">
+				<p>Total Score</p>
+			</div>
+		</div>
+
+		<!-- user score  -->
+		<div class="row">
+			<div class="col-md-3 col-md-offset-1 scoreDiv">
+				<h2 id="userScore">score</h2>
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript" src="assets/javascript/game.js"></script>
+
+</body>
+
+</html>
